@@ -1,10 +1,12 @@
 import { ScissorsIcon } from '@heroicons/react/24/outline';
 import logo from './home.modules.css'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function FlawlessLogo() {
   return (
     <div
-      className={`logo flex flex-row items-center leading-none text-black size-[200] bg-red-200`}
+      className={` `}
     > 
 
 {/* <svg width="200" height="100">
@@ -17,9 +19,18 @@ export default function FlawlessLogo() {
     </textPath>
   </text>
 </svg> */}
-     
-      <strong> <ScissorsIcon className="h-5 w-5 rotate-[15deg]" /> </strong> 
-      <p className="text-[15px] "><strong>Flawless</strong> </p>
+     <Link 
+     href={'#'}
+     >
+       <Image
+      src={'/logo/flawless.png'}
+      width={200}
+      height={200}
+      className='drop-shadow-md p-3'
+      alt='flawless-logo'
+      />
+     </Link>
+   
      
 
     </div>
