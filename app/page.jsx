@@ -4,6 +4,7 @@ import Image from "next/image";
 import Search from "./ui/search";
 import Link from "next/link";
 import {lusitana} from './ui/fonts'
+import './globals.css'
 
 export default function Home() {
   return (
@@ -43,8 +44,8 @@ export default function Home() {
           </div>
 
           </section>
-          <div className=''>
-              <Image
+          <div className='home-bg'>
+              {/* <Image
               src={'/asset/kelwilson.png'}
               alt="salon image"
               width={450}
@@ -54,22 +55,26 @@ export default function Home() {
               // quality={100}
               // className={styles.backgroundImage}      // in css modules styles you import them as JavaScript objects - using CSS Modules, styles is an imported object that contains all your class names as properties.
               className='rounded-3xl'
-            />
+            /> */}
           </div>
         </div>
       </div>
 
-      <section className="mr-10 ml-10 h-[300px] flex justify-between w-[100%] bg-sky-700 m-5 pb-5 ">
-           <div className="flex p-10 ">
-            <h2>Life style and wellness</h2>
+      <section className="mr-10 ml-10 rounded-3xl rounded-tl-none   bg-sky-700 m-5 pb-5 ">
+        <div className={` ${lusitana.className} flex gap-10 w-[100%] justify-between p-10 ml-44`}>
+           <div className="flex flex-col  p-10 ">
+            <h2 className="text-6xl font-700 space-x-4">Life style and <br /> wellness</h2>
 
-            <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">
+                <div>
+                   <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">
                 Book Now
-            </button>
+            </button>  
+                </div>
+         
 
             </div>
 
-            <div className=" flex flex-1 gap-5">
+            <div className=" flex flex-1 gap-5 w-[100%]">
               <article className="h-[150px] w-[10%] bg-green-950 rounded-xl">
 
               </article>
@@ -82,6 +87,7 @@ export default function Home() {
               <article className="h-[150px] w-[10%] bg-green-950 rounded-xl">
 
               </article>
+            </div>
             </div>
       </section>
         
