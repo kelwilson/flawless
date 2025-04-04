@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'home-bg': "url('/asset/Kelwilson.png')",
+      },
     },
   },
   plugins: [require('daisyui'), require('@tailwindcss/forms')],
