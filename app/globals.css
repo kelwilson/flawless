@@ -23,8 +23,13 @@ body {
 
 /* home backgound image */
 .home-bg {
-  background-image: url(/public/asset/Kelwilson.png);
+  background-color: lightblue;
+  background-image: url('/asset/Kelwilson.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  border-radius: 20px;
+  width: 40%;
  
 }
