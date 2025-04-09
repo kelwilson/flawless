@@ -5,6 +5,7 @@ import Search from "./ui/search";
 import Link from "next/link";
 import {lusitana} from './ui/fonts'
 import './globals.css'
+import { Instagram, Facebook } from "lucide-react";
 
 export default function Home() {
   return (
@@ -65,10 +66,15 @@ export default function Home() {
            <div className="flex flex-col  p-10 ">
             <h2 className="text-6xl font-700 space-x-4">Life style and <br /> wellness</h2>
 
-                <div>
+                <div className="flex gap-10 justify-center items-center">
                    <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200">
                 Book Now
             </button>  
+
+            <ul className="flex gap-5 justify-center items-center">
+              <li><Instagram /></li>
+              <li><Facebook /></li>
+            </ul>
                 </div>
          
 
