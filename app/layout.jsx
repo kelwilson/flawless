@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
 
         <div className="flex items-center bg-slate-200 h-[150px] z-0 ">
           <div className="flex w-[45%] h-[100px]  relative">
-          <div className="h-[100px] w-[80%] bg-blue-400 mt-[2rem] z-10 flex justify-center items-center ml-10 rounded-t-3xl"><FlawlessLogo/></div>
+          <div className="h-[100px] w-[80%] bg-blue-400 mt-[2rem] z-10 flex justify-center items-center ml-10 rounded-t-3xl "><FlawlessLogo className={'m-4'}/></div>
            <div className="h-[100px] w-[20%] bg-blue-400 skew-x-12 absolute right-4 top-8 rounded-tr-3xl"></div> 
            </div>
               <div className="flex items-end w-[55%] h-[100%] justify-evenly p-5 rounded-l-full border-4 border-indigo-600">
