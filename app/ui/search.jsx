@@ -7,11 +7,9 @@ export default function Search() {
     //   alert(`You searched for '${query}'`);
     // }
     return (
-        <div className="relative flex flex-shrink-0 justify-center items-center gap-5 w-full">
-          <div>
-            <label className=" flex items-center gap-2 w-full">
-          </label>
-            <input type="text" className="grow outline-none border-none focus:outline-none w-full " placeholder="Search Services" />
+        <div className="relative flex flex-shrink-0 justify-between items-center gap-5 w-full bg-white">
+          <div className="w-full ">
+            <input aria-label="search box" type="text" className="grow outline-none border-none focus:outline-none w-[410px] pt-4 pb-4 pr-5 pl-5" placeholder="Search Services" />
           </div>
           
          <div className="bg-orange-500 p-2 rounded-full self-end">
