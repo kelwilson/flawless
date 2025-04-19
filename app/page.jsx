@@ -1,7 +1,7 @@
 // import FlawlessLogo from "./ui/flawless-logo";
 // import styles from './ui/home.modules.css'
-import Image from "next/image";
-import Search from "./ui/search";
+// import Image from "next/image";
+import Search from "./ui/Search";
 import Link from "next/link";
 import {lusitana} from './ui/fonts'
 import './globals.css'
@@ -9,11 +9,11 @@ import { Instagram, Facebook } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className=" bg-slate-200 h-fit ">
+    <main className=" bg-slate-200 h-fit -z-50 main-wrap">
        {/* Hero Section */}
 
 
-       <div className=" mr-10 ml-10 bg-fuchsia-400 rounded-3xl rounded-tl-none relative">
+       <div className=" mr-10 ml-10 bg-fuchsia-400 rounded-3xl rounded-tl-none relative wrapper">
          {/* <div className=" absolute bg-blue-200 top-5 w-[30%]"> */}
           {/* <FlawlessLogo/> */}
         {/* </div>  */}
@@ -59,9 +59,17 @@ export default function Home() {
             /> */}
           </div>
         </div>
+        <div className='bottom-sm-box'></div>
+        <div className='other-sm-box'>
+        <div className='inner-box'></div>
+
+        </div>
       </div>
 
-      <section className="mr-10 ml-10 rounded-3xl rounded-tl-none   bg-sky-700 m-5 pb-5 ">
+      <div className='lifestyle-top'>
+        <div className="lifestyle-mini"></div>
+      </div>
+      <section className="mr-10 ml-10 rounded-3xl rounded-tl-none bg-sky-700 m-5 mt-10 pb-5 bottom-section ">
         <div className={` ${lusitana.className} flex gap-10 w-[100%] justify-between p-10 ml-44`}>
            <div className="flex flex-col items-center p-10">
             <h2 className="text-6xl font-700 space-x-4">Life style and <br /> wellness</h2>
@@ -76,8 +84,6 @@ export default function Home() {
               <li className="flex justify-center items-center rounded-full bg-slate-300 w-10 h-10 "><Link href={'#'}><Facebook /></Link></li>
             </ul>
                 </div>
-         
-
             </div>
 
             <div className=" flex flex-1 gap-5 w-[100%] items-center">
