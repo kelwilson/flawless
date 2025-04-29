@@ -1,7 +1,7 @@
 // import FlawlessLogo from "./ui/flawless-logo";
 // import styles from './ui/home.modules.css'
 // import Image from "next/image";
-import Search from "./ui/Search";
+import Search from './ui/Search';
 import Link from "next/link";
 import {lusitana} from './ui/fonts'
 import './globals.css'
