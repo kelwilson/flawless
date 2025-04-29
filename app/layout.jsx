@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from './ui/Nav-bar';
+import NavBar from './ui/NavBar';
 // import FlawlessLogo from "./ui/flawless-logo";
 // import { lusitana } from "./ui/fonts";
 
