@@ -9,7 +9,7 @@ import {  SignInButton,
 import '../globals.css'
 
 
-export default function Navbar () {
+export default function NavBar () {
     return (
         <div className="flex items-center bg-slate-200 h-[150px] z-0 w-[100%]">
         <div className="flex w-[50%] h-[100px]  relative">
