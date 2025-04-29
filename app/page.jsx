@@ -13,7 +13,7 @@ export default function Home() {
        {/* Hero Section */}
 
 
-       <div className=" mr-10 ml-10 bg-fuchsia-400 rounded-3xl rounded-tl-none relative wrapper">
+       <div className=" mr-10 ml-10 bg-emerald-500 rounded-3xl rounded-tl-none relative wrapper">
          {/* <div className=" absolute bg-blue-200 top-5 w-[30%]"> */}
           {/* <FlawlessLogo/> */}
         {/* </div>  */}
@@ -34,7 +34,7 @@ export default function Home() {
               <li className="bg-sky-200 p-3 rounded-full w-[20%]">
                 <Link
                 href={'#'}
-                className="btn btn-ghost hidden md:block m:10 text-3xl"> Institute
+                className="btn btn-ghost hidden md:block m:10 text-3xl"> Stylist
                 </Link>
               </li>
               <li className="relative first:mr-5 [&:not(:first-child)]:before:content-[' '] [&:not(:first-child)]:before:absolute [&:not(:first-child)]:before:left-0 [&:not(:first-child)]:before:top-1/2 [&:not(:first-child)]:before:-translate-y-1/2 [&:not(:first-child)]:before:w-px [&:not(:first-child)]:before:h-10 [&:not(:first-child)]:pl-5 [&:not(:first-child)]:pr-5 [&:not(:first-child)]:before:bg-gray-300 text-gray-700">
@@ -68,6 +68,8 @@ export default function Home() {
 
       <div className='lifestyle-top'>
         <div className="lifestyle-mini"></div>
+        <div className='lifestyle-midget'></div>
+        <div className='lifestyle-slant'></div>
       </div>
       <section className="mr-10 ml-10 rounded-3xl rounded-tl-none bg-sky-700 m-5 mt-10 pb-5 bottom-section ">
         <div className={` ${lusitana.className} flex gap-10 w-[100%] justify-between p-10 ml-44`}>
