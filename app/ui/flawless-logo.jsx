@@ -24,9 +24,9 @@ export default function FlawlessLogo() {
      >
        <Image
       src={'/logo/flawless.png'}
-      width={200}
-      height={200}
-      className='drop-shadow-md p-3'
+      width={250}
+      height={250}
+      className='drop-shadow-xl/50 p-3 mt-10'
       alt='flawless-logo'
       />
      </Link>
