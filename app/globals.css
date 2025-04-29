@@ -5,9 +5,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --pink: #e879f9;
+  --emerald-green: #e879f9;
   --gray: #e2e8f0;
   --ash-shadow: #e4e4ee;
+  --emerald-green: #F7E7CE;
+  --blue: #0369a1;
+  --emerald-green:#10B981;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,6 +39,75 @@ body {
   width: 40%;
 }
 
+/* TOP INVERTED BOX*/
+.invert-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 130px;
+  top: -20px;
+  /* margin: 30px; */
+}
+
+.invert-skew {
+  position: absolute;
+  height: 100px;
+  right: -25px;
+  transform: skew(25deg, -5deg);
+
+      &::before, &::after {
+        position: absolute;
+        content: ' ';
+        width: 50%;
+        /* transform: skew(25deg, -1deg); */
+        aspect-ratio: 1;
+        /* background: var(--emerald-green); */
+        /* background: brown; */
+        background: var(--emerald-green);
+      }
+
+        &::before {
+          right: 2px;
+          top: -3px;
+          transform: skew(3deg, -7deg);
+        }
+
+        &::after {
+          right: -20px;
+          bottom: 2px;
+          width: 70%;
+          height: 50px;
+          transform: skew(25deg, -1deg);
+          background: var(--emerald-green);
+          /* background: indigo; */
+        }
+}
+
+.invert-curve {
+  position: absolute;
+  width: 15%;
+  height: 90px;
+  right: -109px;
+  bottom: 15px;
+  background: var(--gray);
+  /* background: olivedrab; */
+  border-bottom-left-radius: 60px;
+
+   &::before {
+    position: absolute;
+    content: ' ';
+    width: 10%;
+    height: 70px;
+    top: 0px;
+    right: 84px;
+    aspect-ratio: 1;  /* NOTE: without the aspect ratio property the dynamically created css element won't be visible */
+    background-color: var(--gray);
+    /* background-color: red; */
+    transform: skew(27deg, -5deg);
+   }
+}
+
+
+/* BOTTOM INVERTED BOX*/
 .wrapper {
   z-index: 55;
  
@@ -55,16 +127,14 @@ body {
         content: ' ';
         width: 60px;
         aspect-ratio: 1;
-        /* background: radial-gradient(circle 60px at top right, #e879f9 98%, #e2e8f0); */
-        
-        /* background: radial-gradient(circle 60px, at top right,purple 98%, red)  top right ; */
+
       }
       &::before {
         top: 0px;
         right: 50px;
         z-index: 1;
         border-bottom-left-radius: 2rem;
-        background-color: var(--pink);
+        background-color: var(--emerald-green);
         /* background-color: yellow; */
         width: 80pxv;
         /* box-shadow:  -10px 0px 10px 0px  #e5e0e6; */
@@ -78,7 +148,7 @@ body {
         top: -60px;
         left: 0;
         border-bottom-left-radius: 2rem;
-        background-color: var(--pink);
+        background-color: var(--emerald-green);
         box-shadow: -20px 4px 0px var(--ash-shadow);
 
         }
@@ -100,19 +170,15 @@ body {
           width: 150px;
           transform: skew(25deg, -1deg);
           aspect-ratio: 1;
-          background: var(--pink);
-          
-          /* background: radial-gradient(circle 60px at top right, #e879f9 98%, #e2e8f0); */
+          background: var(--emerald-green);
         }
         
         &::before {
           bottom: 0.8px;
           right: -126px;
           /* z-index: 7; */
-          background-color: var(--pink);
-          border-bottom-left-radius: 25px;
-          /* box-shadow: inset 0.3em 0.3em 0  #e879f9;  */
-          /* height: 50px; */
+          background-color: var(--emerald-green);
+          border-bottom-left-radius: 35px;
         }
 
         &::after {
@@ -123,7 +189,7 @@ body {
           background-color: var(--gray);
           transform: skew(27deg, 28deg);
           border-top-right-radius: 37px;
-           box-shadow: 10px -4px 0px var(--pink);
+           box-shadow: 10px -4px 0px var(--emerald-green);
 
           z-index: 2; 
 
@@ -135,7 +201,7 @@ body {
         content: ' ';
         width: 10%;
         height: 50px;
-        background: var(--pink);
+        background: var(--emerald-green);
         top: -30px;
         right: 45px;
         z-index: 15;
@@ -152,7 +218,7 @@ body {
           right: -11px;
           border-top-right-radius: 40px;
           transform: skew(14deg, 0deg);
-          box-shadow: 10px -4px 0px var(pink);
+          /* box-shadow: 10px -4px 0px var(pink); */
       
         }
 }
@@ -166,7 +232,7 @@ body {
       content: ' ';
       height: 120px;
       width: 28%;
-      background: greenyellow;
+      background: var(--blue);
       border-top-right-radius: 40px;
       border-top-left-radius: 40px;
       bottom: -2px;
@@ -179,17 +245,24 @@ body {
           content: ' ';
           width: 60px;
           height: 90px;
-          top: -9px;
-          right: -50px;
+          /* right: -50px; */
           background: var(--gray);
           /* background: blueviolet; */
           transform: skew(32deg, -3deg);
-          box-shadow: 10px 0 -7px 5px var(pink);
+          box-shadow: 10px 0 -7px 5px var(--blue);
 
         }
 
+          &::before {
+            bottom: -20px;
+            right: -37px;
+            width: 20px;
+            height: 120px;
+            background:var(--blue);
+          }
+
           &::after {
-            background: red;
+            background: var(--blue);
             top: 3px;
             right: -27px;
             height: 120px;
@@ -205,7 +278,7 @@ body {
               height: 50px;
               right: 0px;
               top: 0px;
-              background: indianred;
+              background: var(--blue);
               border-top-right-radius: 40px;
 
                 &::before, &::after {
@@ -213,25 +286,53 @@ body {
                   content: ' ';
                   width: 100%;
                   height: 100%;
-                  background: green;
-                  border-top-right-radius: 40px;
-                  right: -5.5px;
-
+                  /* right: -5.5px; */
+                  
                   
                 }
                 
                 &::before {
                   top: 0px;
-                  right: 0px;
-                  
-                  
-                    position: absolute;
-                    content: ' ';
-                    background-color: #0a0a0a;
-                    height: 100%;
-                    width: 100%;
+                  right: -5.5px;
+                  background: var(--blue);
+                  border-top-right-radius: 40px;
+                 
+                
                   } 
-                }
+                    &::after {
+                      bottom: -69px;
+                      right: -115px;
+                      height: 39px;
+                      background: var(--gray);
+                      border-bottom-left-radius: 60px;
+                      transform: skew(20deg, 0.5deg);
+                    }
+                
+            }
+
+            & .lifestyle-midget {
+              position: absolute;
+              content: ' ';
+              width: 10%;
+              height: 30px;
+              bottom: 0;
+              right: -89px;
+              /* background: green; */
+              background: var(--blue);
+              z-index: -1;
+            }
+
+            & .lifestyle-slant {
+              position: absolute;
+              content: ' ';
+              width: 2%;
+              height: 80px;
+              top: -10px;
+              right: -46px;
+              background: var(--gray);
+              /* background: blueviolet; */
+              transform: skew(30deg, 5deg);
+              box-shadow: 10px 0 -7px 5px var(--blue);
             }
     }
 }
