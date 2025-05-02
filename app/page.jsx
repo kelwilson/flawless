@@ -6,6 +6,7 @@ import Link from "next/link";
 import {lusitana} from './ui/fonts'
 import './globals.css'
 import { Instagram, Facebook } from "lucide-react";
+import Stylists from './ui/home/Stylists';
 
 export default function Home() {
   return (
@@ -134,6 +135,9 @@ export default function Home() {
               </article>
             </div>
             </div>
+      </section>
+      <section>
+                <Stylists className='m-5'/>
       </section>
     </main>
     
